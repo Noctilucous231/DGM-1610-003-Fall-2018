@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class CharacterMove : MonoBehaviour {
 
-	public int MoveSpeed;
-	public float JumpHeight;
+// Player Movement Variables
+public int MoveSpeed;
+public float JumpHeight;
 
-	// Use this for initialization
+// Player Grounded Variables	
+public Transform GroundCheck;
+public float GroundCheckRadius;
+public LayerMask WhatIsGround;
+private bool Grounded;
+
+// Use This For Initialization
 	void Start () {
 		print("Hello World!");	
 	}
