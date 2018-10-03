@@ -7,28 +7,21 @@ public class NewBehaviourScript : MonoBehaviour {
 	//declare three variables
 	public int Variable1;
 	public int Variable2;
-	private int Total;
+	int Total;
 
-	void AddVariables (){
-		Total = Variable1 + Variable2;
-			print(Total);
+	void Start(){
+		CalcAdd();
 	}
 
-
-
-
-
-
-
-
-
-	// Use this for initialization
-	void Start () {
-		
-	}
+	public void CalcAdd(){
 	
-	// Update is called once per frame
-	void Update () {
-		
+		AddVariables(Variable1,Variable2);
+	}
+
+	public void AddVariables(int One, int Two){
+
+		Total = One + Two;
+
+			print(Total);
 	}
 }
