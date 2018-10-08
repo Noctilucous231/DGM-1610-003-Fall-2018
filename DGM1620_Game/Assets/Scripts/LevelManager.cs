@@ -22,7 +22,7 @@ public class LevelManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		player = FindObjectOfType<Rigidbody2D> ();
+		Player = FindObjectOfType<Rigidbody2D> ();
 	}
 
 	public void RespawnPlayer(){
@@ -31,18 +31,38 @@ public class LevelManager : MonoBehaviour {
 	
 	public IEnumerator RespawnPlayerCo(){
 		//generate death particle
-		Instantiate (DeathParticle, player.transform.position, player.transform.rotation);
+		Instantiate (DeathParticle, Player.transform.position, Player.transform.rotation);
+
 		//hide player
-		player.enabled = false;
-		player.GetComponent<Renderer> ().enabled = false;
+
+		//Player.enabled = false;
+		Player.GetComponent<Renderer> ().enabled = false;
+
 		//gravity reset
-		GravityStore = player.GetComponent<Rigidbody2D>().GravityScale;
-		player.GetComponent<Rigidbody2D>().GravityScale = 0f;
-		player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+		GravityStore = Player.GetComponent<Rigidbody2D>().gravityScale;
+		Player.GetComponent<Rigidbody2D>().gravityScale = 0f;
+		Player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
 		//Point Penalty
 		ScoreManager.AddPoints(-PointPenaltyOnDeath);
+
 		//Debug Message
 		Debug.Log ("Player Respawn");
+
+		//Respawn Delay
+		yeld return new WaitForSeconds (RespawnDelay);
+
+		//Gravity Restore
+		Plyaer.GetComponent<Rigidbody2D>().gravityScale = GravityStore;
+
+		//Match Players Transform Position
+		
+
+		//Show Player
+
+		//Player.enabled = true;
+
+		//Spawn Player
 	}
 	// Update is called once per frame
 	void Update () {
