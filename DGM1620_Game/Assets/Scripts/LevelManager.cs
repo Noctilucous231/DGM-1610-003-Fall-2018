@@ -50,19 +50,22 @@ public class LevelManager : MonoBehaviour {
 		Debug.Log ("Player Respawn");
 
 		//Respawn Delay
-		yeld return new WaitForSeconds (RespawnDelay);
+		yield return new WaitForSeconds (RespawnDelay);
 
 		//Gravity Restore
-		Plyaer.GetComponent<Rigidbody2D>().gravityScale = GravityStore;
+		Player.GetComponent<Rigidbody2D>().gravityScale = GravityStore;
 
 		//Match Players Transform Position
-		
+		Player.transform.position = CurrentCheckPoint.transform.position;
 
 		//Show Player
+		//Player.enabled = true;
+		Player.GetComponent<Renderer>().enabled = true;
 
 		//Player.enabled = true;
 
 		//Spawn Player
+		Instantiate (RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
 	}
 	// Update is called once per frame
 	void Update () {

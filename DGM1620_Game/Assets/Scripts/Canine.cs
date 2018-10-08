@@ -8,6 +8,7 @@ public class Canine : Animal {
 	public bool Bark;
 	public Color CoatColor;
 	public int Size;
+	public string EarType;
 
 	// Use this for initialization
 	void Start () {

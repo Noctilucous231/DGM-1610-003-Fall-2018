@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GermanShepard : Canine {
 
+	public bool Friendly;
+	
+
 	// Use this for initialization
 	void Start () {
 		
