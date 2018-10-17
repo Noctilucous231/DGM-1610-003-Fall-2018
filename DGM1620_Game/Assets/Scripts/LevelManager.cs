@@ -67,8 +67,4 @@ public class LevelManager : MonoBehaviour {
 		//Spawn Player
 		Instantiate (RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
 	}
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
