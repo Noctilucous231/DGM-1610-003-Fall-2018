@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4678085877460898}
   - component: {fileID: 212964909223400182}
   - component: {fileID: 61719414186058154}
+  - component: {fileID: 61006502849365974}
   - component: {fileID: 50926736329952468}
   - component: {fileID: 114108337461395720}
   - component: {fileID: 114466544558333258}
-  - component: {fileID: 61006502849365974}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -240,7 +240,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300008, guid: 1eb25eac1f13b5840a9cc1ba5aad104d, type: 3}
-  m_Color: {r: 0.3882353, g: 0.17254904, b: 0.28395993, a: 1}
+  m_Color: {r: 0.514194, g: 0.5754717, b: 0.46417764, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

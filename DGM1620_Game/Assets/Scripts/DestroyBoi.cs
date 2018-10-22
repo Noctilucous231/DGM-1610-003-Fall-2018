@@ -12,7 +12,7 @@ public class DestroyBoi : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter2D(Collider2D other){
-		if(other.name == "Boi"){
+		if(other.name == "boi"){
 			LevelManager.RespawnPlayer();
 		}
 	}
