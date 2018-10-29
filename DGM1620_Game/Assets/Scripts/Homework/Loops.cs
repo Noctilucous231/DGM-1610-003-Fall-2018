@@ -13,6 +13,12 @@ public class Loops : MonoBehaviour {
 
 		// 3 For Loops
 
+	//void Start(){
+	//	for(int i=20 >= 0; i++){
+	//		print(i + "oof")
+	//	}
+	
+
 		// 3 While Loops
 
 

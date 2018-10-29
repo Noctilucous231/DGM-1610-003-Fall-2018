@@ -1385,9 +1385,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 750229922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73d6725746251b64590a0ba4e1e54b0b, type: 3}
+  m_Script: {fileID: 11500000, guid: 17f06dd72429d0c42b6e3206c50026e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: Red
+  Candy: 5
+  Jump: 0
+  NPC: Happy
 --- !u!4 &750229924
 Transform:
   m_ObjectHideFlags: 0
