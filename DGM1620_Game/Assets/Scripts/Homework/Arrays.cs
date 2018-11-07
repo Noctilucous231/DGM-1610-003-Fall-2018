@@ -10,10 +10,36 @@ public class Arrays : MonoBehaviour {
 	public int[] Eggs = new int[12];
 	public string[] Loot = new string[10];
 	public string[] Jedi = new string[12];
+	public string[] Pets = new string[5];
+	public int[] MagicDamage = new int[10];
 
 	// Use this for initialization
 	void Start () {
+
+		Pets = new string[5];
+		Pets[0] = "dog";
+		Pets[1] = "cat";
+		Pets[2] = "squirrel";
+		Pets[3] = "gerbal";
+		Pets[4] = "sloth";
+
+		foreach(string item in Pets){
+			print("what a cute " + item);
+		}
 		
+		MagicDamage[0] = 1;
+		MagicDamage[1] = 2;
+		MagicDamage[2] = 3;
+		MagicDamage[3] = 4;
+		MagicDamage[4] = 5;
+		MagicDamage[5] = 6;
+		MagicDamage[6] = 7;
+		MagicDamage[7] = 8;
+		MagicDamage[8] = 9;
+		MagicDamage[9] = 10;
+
+		print(MagicDamage[4]);
+
 		Loot = new string[10];
 		Loot[0] = "money";
 		Loot[1] = "potions";
