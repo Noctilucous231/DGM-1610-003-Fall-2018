@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212352967225984662}
   - component: {fileID: 58024201279729012}
   - component: {fileID: 114506503855525302}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 5coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300010, guid: 31fdec62d1555a743be059c9f73d3aa0, type: 3}
   m_Color: {r: 0.8773585, g: 0.578517, b: 0.45937166, a: 1}
   m_FlipX: 0

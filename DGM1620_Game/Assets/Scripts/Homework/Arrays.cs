@@ -69,7 +69,7 @@ public class Arrays : MonoBehaviour {
 		Eggs[10] = 11;
 		Eggs[11] = 12;
 
-		print(Eggs[8]);
+		print(Eggs[Random.Range(0,11)]);
 
 		Jedi = new string[5];
 

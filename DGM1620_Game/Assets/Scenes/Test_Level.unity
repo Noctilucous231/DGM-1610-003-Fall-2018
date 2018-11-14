@@ -1424,9 +1424,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 750229922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526c1c4e5920e1941892b7f23a907f58, type: 3}
+  m_Script: {fileID: 11500000, guid: fca5fa0d562b51e42bc9ab95935a8141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Eggs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  Loot:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  Jedi:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  Pets:
+  - 
+  - 
+  - 
+  - 
+  - 
+  MagicDamage: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!4 &750229924
 Transform:
   m_ObjectHideFlags: 0
@@ -3837,6 +3869,11 @@ Prefab:
     - target: {fileID: 1839577472131952, guid: b7dc766b16817dd428e75651a2a0bafd, type: 2}
       propertyPath: m_Name
       value: 5coin (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212352967225984662, guid: b7dc766b16817dd428e75651a2a0bafd,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7dc766b16817dd428e75651a2a0bafd, type: 2}

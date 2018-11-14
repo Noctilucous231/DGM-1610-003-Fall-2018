@@ -6,7 +6,6 @@ public class LevelManager : MonoBehaviour {
 
 	public GameObject CurrentCheckPoint;
 	public Rigidbody2D Player;
-
 	public GameObject Player2;
 
 	//particles
