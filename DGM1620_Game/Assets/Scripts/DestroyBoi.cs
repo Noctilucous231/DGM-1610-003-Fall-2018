@@ -5,6 +5,8 @@ public class DestroyBoi : MonoBehaviour {
 
 	public LevelManager LevelManager;
 
+//	public HealthManager HealthManager;
+
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +15,8 @@ public class DestroyBoi : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.name == "boi"){
-			LevelManager.RespawnPlayer();
+	 LevelManager.RespawnPlayer();
+			// HealthManager.LifeToAdd(-1);
 		}
 	}
 }
