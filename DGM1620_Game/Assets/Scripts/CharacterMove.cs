@@ -18,6 +18,8 @@ private bool Grounded;
 //Non-Stick Player
 private float MoveVelocity;
 
+public Animator animator;
+
 // Use This For Initialization
 	void Start () {
 		print("Hello World!");	
@@ -52,10 +54,11 @@ private float MoveVelocity;
 	if(Input.GetKey (KeyCode.D)){
 		//GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		MoveVelocity = MoveSpeed;
+		animator.SetFloat("Speed", Mathf.Abs(moveSpeed));
 	}
 	if(Input.GetKey (KeyCode.A)){
 		//GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-		MoveVelocity = -MoveSpeed;
+		MoveVelocity = -MoveSpeed;	
 	}
 
 	GetComponent<Rigidbody2D>().velocity = new Vector2(MoveVelocity, GetComponent<Rigidbody2D>().velocity.y);
