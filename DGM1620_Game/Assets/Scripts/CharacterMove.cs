@@ -39,9 +39,15 @@ public Animator animator;
 	}
 
 	//Double jump code
-	if(Grounded)
+	if(Grounded){
 		DoubleJump = false;
+		animator.SetBool("IsJumping", false);
+	}
 	
+	else{ 
+	animator.SetBool("IsJumping",true);
+}
+
 	if(Input.GetKeyDown (KeyCode.Space)&& !DoubleJump && !Grounded){
 			Jump();
 			DoubleJump = true;
@@ -54,11 +60,19 @@ public Animator animator;
 	if(Input.GetKey (KeyCode.D)){
 		//GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		MoveVelocity = MoveSpeed;
-		animator.SetFloat("Speed", Mathf.Abs(moveSpeed));
+		animator.SetBool("IsWalking", true);
 	}
+	else if (Input.GetKeyUp(KeyCode.D)){
+		animator.SetBool("IsWalking", false);
+	}
+
 	if(Input.GetKey (KeyCode.A)){
 		//GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		MoveVelocity = -MoveSpeed;	
+		animator.SetBool("IsWalking", true);
+	}
+	else if (Input.GetKeyUp(KeyCode.A)){
+		animator.SetBool("IsWalking", false);
 	}
 
 	GetComponent<Rigidbody2D>().velocity = new Vector2(MoveVelocity, GetComponent<Rigidbody2D>().velocity.y);
