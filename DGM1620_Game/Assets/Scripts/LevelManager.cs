@@ -32,7 +32,7 @@ public class LevelManager : MonoBehaviour {
 	
 	public IEnumerator RespawnPlayerCo(){
 		//generate death particle
-		Instantiate (DeathParticle, Player.transform.position, Player.transform.rotation);
+//		Instantiate (DeathParticle, Player.transform.position, Player.transform.rotation);
 
 		//hide player
 
@@ -47,6 +47,9 @@ public class LevelManager : MonoBehaviour {
 
 		//Point Penalty
 		ScoreManager.AddPoints(-PointPenaltyOnDeath);
+
+		//Bring Back Health
+		HealthManager.ResetHealth();
 
 		//Debug Message
 		Debug.Log ("Player Respawn");
@@ -67,6 +70,6 @@ public class LevelManager : MonoBehaviour {
 		Player.GetComponent<Renderer>().enabled = true;
 
 		//Spawn Player
-		Instantiate (RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
+		//Instantiate (RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
 	}
 }
